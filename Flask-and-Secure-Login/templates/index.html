@@ -1,0 +1,59 @@
+<!--
+Helpful links:
+https://www.w3schools.com/tags/tag_center.asp
+https://www.w3schools.com/html/html_styles.asp
+https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window
+https://www.tutorialspoint.com/How-to-change-font-size-in-HTML
+https://stackoverflow.com/a/15861752
+https://stackoverflow.com/a/14540121
+
+Useful for table stuff:
+https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-table.html
+-->
+<html>
+<head>
+    <title>Video Game Information Page</title> <!--Changes title for the tab in browser-->
+    <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='style.css')}}">
+    <!--Set style for alignment and border removal-->
+    <style>
+        h1 {margin:0;text-align: center;}
+        p {margin:0;}
+        div {text-align: center;}
+    </style>
+</head>
+
+<body style="margin: 0"> <!--Use full window, get rid of white border-->
+    <div class="landing_page"> <!--Sets background image and takes 100% of window-->
+        <p>{{datetime}}</p> <!--Display the date-->
+    <h1>Video Game Information Page</h1>
+    <br>
+    <!--Start of table-->
+    <table class="center">
+        <tr>
+            <th>MMO/Sims</th>
+            <th>RPG</th>
+            <th>Game Home Pages</th>
+        </tr>
+        <tr>
+            <td class="td"><a href="/page2.html" style="color:black;font-size:40px"> Star Citizen Information
+                <img src="/static/star-citizen.gif" alt="sc_gif" width="700" height="400"></a></td>
+            <br>
+            <td class="td"><a href="/page3.html" style="color:black;font-size:40px"> Bloodborne Information
+                <img src="/static/bloodborne.gif" alt="bb_gif" width="700" height="400"></a></td>
+            <td class="td"><a href="https://robertsspaceindustries.com/" style="color:black;font-size:40px">Star Citizen Home</a><br>
+                <a href="https://www.playstation.com/en-us/games/bloodborne/" style="color:black;font-size:40px">Bloodborne Home</a></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td class="td"><a style="color:black;font-size:20px">Tyler Wilson</a></td>
+            <td class="td"><a style="color:black;font-size:20px">123-456-7890</a></td>
+            <td class="td"><a style="color:black;font-size:20px">unknownpsyco999@yahoo.com</a></td>
+        </tr>
+</table>
+</div>
+</body>
+</html>

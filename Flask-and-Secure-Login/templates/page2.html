@@ -1,0 +1,45 @@
+<!--
+Helpful links:
+https://www.w3schools.com/tags/tag_center.asp
+https://www.w3schools.com/html/html_styles.asp
+https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window
+https://www.tutorialspoint.com/How-to-change-font-size-in-HTML
+https://stackoverflow.com/a/15861752
+https://stackoverflow.com/a/14540121
+-->
+<html>
+<head>
+    <title>Star Citizen Information Page</title> <!--Changes title for the tab in browser-->
+    <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='style.css')}}">
+    <!--Set style for alignment and border removal-->
+    <style>
+        h1 {margin:0;text-align: center;}
+        div {text-align: center;}
+    </style>
+</head>
+
+<body style="margin: 0"> <!--Use full window, get rid of white border-->
+    <div class="star_cit"> <!--Sets background image and takes 100% of window-->
+    <h1 style="color:white;font-size:60px">Star Citizen Information Page</h1>
+    <h2 style="color:white;font-size:40px">Useful Links</h2>
+    <div class="separate">
+        <ol>
+            <li><a href="https://www.erkul.games/" style="color:white;font-size:20px">Ship Dps Calculator</a></li>
+            <li><a href="https://starcitizen.tools/Ships" style="color:white;font-size:20px">Ship Starter Information</a></li>
+            <li><a href="https://starcitizen.tools/Category:Personal_weapons" style="color:white;font-size:20px">Personal Weapon Information</a></li>
+        </ol>
+    </div>
+    <h3 style="color:white;font-size:40px">News</h3>
+    <div class="separate">
+        <ul>
+            <li><a href="https://www.youtube.com/user/BoredGamerUK" style="color:white;font-size:20px">BoredGamerUK Channel</a></li>
+            <li><a href="https://robertsspaceindustries.com/roadmap/progress-tracker/teams" style="color:white;font-size:20px">Roadmap</a></li>
+            <li><a href="https://robertsspaceindustries.com/patch-notes" style="color:white;font-size:20px">Changelog</a></li>
+        </ul>
+    </div>
+
+    <a href="/index.html">Home Page</a>
+    <a href="/page3.html">Bloodborne Information</a>
+</div>
+</body>
+</html>

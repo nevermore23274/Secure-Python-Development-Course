@@ -1,0 +1,43 @@
+<!--
+Helpful links:
+https://www.w3schools.com/tags/tag_center.asp
+https://www.w3schools.com/html/html_styles.asp
+https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window
+https://www.tutorialspoint.com/How-to-change-font-size-in-HTML
+https://stackoverflow.com/a/15861752
+https://stackoverflow.com/a/14540121
+https://www.w3schools.com/howto/howto_css_table_center.asp
+-->
+<html>
+<head>
+    <title>Bloodborne Information Page</title> <!--Changes title for the tab in browser-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <!--Set style for alignment and border removal-->
+    <style>
+        h1 {margin:0;text-align: center;}
+        div {text-align: center;}
+    </style>
+</head>
+
+<body style="margin: 0"> <!--Use full window, get rid of white border-->
+    <div class="bloodborne"> <!--Sets background image and takes 100% of window-->
+    <h1 style="color:black;font-size:60px">Bloodborne Information Page</h1>
+    <h2 style="color:black;font-size:40px">Useful Links</h2>
+    <div class="separate">
+        <ol>
+            <li><a href="https://www.bloodborne-wiki.com/p/builds.html" style="color:black;font-size:20px">Player Builds</a></li>
+            <li><a href="https://www.reddit.com/r/bloodborne/comments/5e1sot/completionist_guide/" style="color:black;font-size:20px">Completion Guide</a></li>
+        </ol>
+    </div>
+    <h3 style="color:black;font-size:40px">News</h3>
+    <div class="separate">
+        <ul>
+            <li><a href="https://www.bloodborne-wiki.com/p/game-patches.html" style="color:black;font-size:20px">Patch Notes</a></li>
+        </ul>
+    </div>
+
+    <a href="/index.html">Home Page</a>
+    <a href="/page2.html">Star Citizen Information</a>
+</div>
+</body>
+</html>

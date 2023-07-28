@@ -1,0 +1,64 @@
+/*
+Helpful links:
+https://css-tricks.com/perfect-full-page-background-image/
+https://www.w3schools.com/html/html_images_background.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds
+*/
+.separate {
+    margin-top: 5px;
+}
+
+/* Table formatting */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px
+}
+
+th {
+    background-color: #4287f5;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td {
+    background-color: #FFFFFF;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.landing_page {
+    background: url("fancy_compass.png") no-repeat center center fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.star_cit {
+    background: url("space_background.png") no-repeat center center fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bloodborne {
+    background: url("bloodborne_background.png") no-repeat center center fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
